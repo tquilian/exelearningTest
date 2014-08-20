@@ -25,12 +25,12 @@ var lm_suspend_data="",
 	suspendArray=new Array(),
 	ai_score=new Array(),
 	ai_poss_score=new Array(),
-	masteryscore = 70,
+	masteryscore = 0,
 	lm_lang = "en",
 	displayTextarea=0;
 
 //add language options
-if (document.getElementsByTagName("html")[0].lang == "de") lm_lang = "de";
+//if (document.getElementsByTagName("html")[0].lang == "de") lm_lang = "de";
 
 var lm_txtvars={
 	"score":{
