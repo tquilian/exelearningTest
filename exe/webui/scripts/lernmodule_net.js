@@ -634,8 +634,9 @@ function ShowScormMultiClozeAnswers(ident){
 
 function ShowScormMultiClozeWord(ele) {
 	var original = getScormMultiClozeAnswer(ele, 0);
-	var answer = original.split('|')[0];
-	ele.value = answer;
+//	var answer = original.split('|')[0];
+//	ele.value = answer;
+	ele.value = original; //special KIT
 	markScormMultiClozeWord(ele,2);
 }
 //END added lernmodule.net 121218  
