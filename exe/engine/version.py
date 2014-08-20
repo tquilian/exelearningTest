@@ -23,7 +23,7 @@
 Version Information
 """
 
-project = "eXelearningPlus"
+project = "KIC.InnoEnergy"
 release = "2.0rc1"
 revisionIntef = "c36a1a2"
 revisionLernmodule = "2"
