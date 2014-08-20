@@ -211,3 +211,19 @@ padding-right:4px;
 #bottomPagination {
 	height:40px;
 }
+
+.iDevice_answer-field {
+	display:inline
+}
+.iDevice_answer-field label{
+	display:none
+}
+.iDevice_answer-content {
+	display:inline
+}
+.iDevice_answer-content p{
+	display:inline
+}
+.iDevice_answer-content div{
+	display:inline
+}
