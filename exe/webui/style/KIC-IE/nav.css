@@ -105,7 +105,7 @@ font-size:1.1em;
 }
 
 
-#header {
+#header, #emptyHeader {
 background:url(my_header.jpg) no-repeat 0 0;
 background-repeat:no-repeat;
 color:#666;
@@ -114,7 +114,7 @@ font-size:2.6em;
 font-weight:700;
 position:absolute;
 height:70px;
-width:400px;
+width:800px;
 padding-top:30px;
 padding-left:10px;
 top:0;
@@ -122,8 +122,10 @@ top:0;
 
 /* Inserted ktlm */
 #siteNav ul span{margin:4px 0px 0px 0px;font-size:.95em}
-#siteNav ul ul span{margin:4px 0px 0px 16px;font-size:.95em}
-#siteNav ul ul ul span{margin:4px 0px 0px 41px;font-size:.95em}
-#siteNav ul ul ul a{margin:4px 0px 0px 25px;font-size:.95em}
+#siteNav ul ul span{margin:1px 0px 0px 16px;font-size:.95em}
+#siteNav ul ul ul span{margin:0px 0px 0px 41px;font-size:.95em}
+#siteNav ul a{margin:4px 0px 0px 10px;font-size:.95em}
+#siteNav ul ul a{margin:4px 0px 0px 22px;font-size:.95em}
+#siteNav ul ul ul a{margin:4px 0px 0px 34px;font-size:.95em}
 /* Inserted ktlm END*/
 
