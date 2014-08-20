@@ -519,7 +519,9 @@ function checkAndMarkScormMultiClozeWord(ele) {
 				break;
 			}
 		}
-		if (correct) return origGuess;
+//		if (correct) return origGuess;
+// special KIT
+		if (correct) return original;
 		else return "";
 	}
 
