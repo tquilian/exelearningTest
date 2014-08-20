@@ -201,6 +201,8 @@ class WebsiteExport(object):
         jsFile.copyfile(outputDir/'common.js')
         jsFile = (self.scriptsDir/'lernmodule_net.js')
         jsFile.copyfile(outputDir/'lernmodule_net.js')
+        jsFile = (self.scriptsDir/'lernmodule_net_custom.js')
+        jsFile.copyfile(outputDir/'lernmodule_net_custom.js')
         #dT = common.getExportDocType()
         dT=common.getExportDocType();
         if dT == "HTML5":

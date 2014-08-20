@@ -90,7 +90,9 @@ class SinglePage(Page):
         style = G.application.config.styleStore.getStyle(self.node.package.style)
         if style.hasValidConfig:
             html += style.get_extra_body()        
-        html += u'</body></html>'
+        html += u'</body>'
+        html += u'<script type="text/javascript" src="lernmodule_net_custom.js"></script>'+lb
+        html += u'</html>'
         
         # JR: Eliminamos los atributos de las ecuaciones
         aux = re.compile("exe_math_latex=\"[^\"]*\"")

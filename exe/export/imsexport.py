@@ -372,7 +372,9 @@ class IMSPage(Page):
         html += u"<div id=\"lmsubmit\"></div><script type=\"text/javascript\" language=\"javascript\">doStart();</script>"+lb
         if style.hasValidConfig:
             html += style.get_extra_body() 
-        html += u'</body></html>'
+        html += u'</body>'
+        html += u'<script type="text/javascript" src="lernmodule_net_custom.js"></script>'+lb
+        html += u'</html>'
         html = html.encode('utf8')
         # JRJ: Eliminamos los atributos de las ecuaciones
         # Let's elliminate the attibutes of the equations
@@ -483,6 +485,8 @@ class IMSExport(object):
         jsFile.copyfile(outputDir/'common.js')
         jsFile = (self.scriptsDir/'lernmodule_net.js')
         jsFile.copyfile(outputDir/'lernmodule_net.js')
+        jsFile = (self.scriptsDir/'lernmodule_net_custom.js')
+        jsFile.copyfile(outputDir/'lernmodule_net_custom.js')
         dT = common.getExportDocType()
         if dT == "HTML5":
             jsFile = (self.scriptsDir/'exe_html5.js')

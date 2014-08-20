@@ -525,6 +525,7 @@ class ScormExport(object):
             self.scriptsDir.copylist(('SCORM_API_wrapper.js',
                                       'SCOFunctions.js', 
                                       'lernmodule_net.js',
+                                      'lernmodule_net_custom.js',
                                       'common.js'), outputDir)     
         # about SCHEMAS:
         schemasDir = ""

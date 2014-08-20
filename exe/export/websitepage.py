@@ -214,7 +214,9 @@ class WebsitePage(Page):
         if themeHasXML:
         #if style.hasValidConfig:
             html += style.get_extra_body()        
-        html += u'</body></html>'
+        html += u'</body>'
+        html += u'<script type="text/javascript" src="lernmodule_net_custom.js"></script>'+lb
+        html += u'</html>'
         html = html.encode('utf8')
         # JR: Eliminamos los atributos de las ecuaciones
         aux = re.compile("exe_math_latex=\"[^\"]*\"")
