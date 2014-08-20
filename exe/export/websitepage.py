@@ -192,6 +192,7 @@ class WebsitePage(Page):
                         block.renderView(self.node.package.style))
                 html += u'</'+articleTag+'>'+lb # iDevice div
 
+        html += "<"+sectionTag+" id=\"lmsubmit\"></"+sectionTag+"><script type=\"text/javascript\" language=\"javascript\">doStart();</script>"+lb
         if not themeHasXML:
             html += "<div id='bottomPagination'>"+lb
             html += self.getNavigationLink(prevPage, nextPage)
@@ -201,7 +202,6 @@ class WebsitePage(Page):
         if not themeHasXML:
         #if not style.hasValidConfig:
             html += self.renderFooter()
-        html += "<"+sectionTag+" id=\"lmsubmit\"></"+sectionTag+"><script type=\"text/javascript\" language=\"javascript\">doStart();</script>"+lb
         html += u"</"+sectionTag+">"+lb # /main
         html += u"</div>"+lb # /main-wrapper
         if themeHasXML:

@@ -209,3 +209,7 @@ iframe {
 .js-hidden {
   display:none
 }
+
+#bottomPagination {
+	height:40px;
+}

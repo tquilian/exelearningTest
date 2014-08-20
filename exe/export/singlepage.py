@@ -81,10 +81,10 @@ class SinglePage(Page):
         html += u"</"+headerTag+">"+lb
         html += u"<"+sectionTag+" id=\"main\">"+lb
         html += self.renderNode(package.root, 1)
+        html += u"<"+sectionTag+" id=\"lmsubmit\"></"+sectionTag+"><script type=\"text/javascript\" language=\"javascript\">doStart();</script>"
         html += u"</"+sectionTag+">"+lb
         html += self.renderLicense()+lb
         html += self.renderFooter()+lb
-        html += u"<"+sectionTag+" id=\"lmsubmit\"></"+sectionTag+"><script type=\"text/javascript\" language=\"javascript\">doStart();</script>"
         html += u"</div>"+lb # Close content
         # Some styles might have their own JavaScript files (see their config.xml file)
         style = G.application.config.styleStore.getStyle(self.node.package.style)

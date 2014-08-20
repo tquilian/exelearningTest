@@ -143,6 +143,7 @@ class ScormPage(Page):
                     block.renderView(self.node.package.style))
                 html += u'</'+articleTag+'>'+lb # iDevice div
 
+        html += u'<'+sectionTag+' id="lmsubmit"></'+sectionTag+'><script type="text/javascript" language="javascript">doStart();</script>'+lb
         html += u"</"+sectionTag+">"+lb # /#main
         themeHasXML = common.themeHasConfigXML(self.node.package.style)
         if themeHasXML:
@@ -162,7 +163,6 @@ class ScormPage(Page):
             html += self.renderFooter()
         else:
             html += style.get_extra_body()
-        html += u'<'+sectionTag+' id="lmsubmit"></'+sectionTag+'><script type="text/javascript" language="javascript">doStart();</script>'+lb
         html += u'</body>'
         html += u'<script type="text/javascript" src="lernmodule_net_custom.js"></script>'+lb
         html += u'</html>'

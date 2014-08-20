@@ -365,11 +365,11 @@ class IMSPage(Page):
                         block.renderView(self.node.package.style))
             html += u'</'+articleTag+'>'+lb # iDevice div
 
+        html += u"<div id=\"lmsubmit\"></div><script type=\"text/javascript\" language=\"javascript\">doStart();</script>"+lb
         html += u"</"+sectionTag+">"+lb # /#main
         html += self.renderLicense()
         html += self.renderFooter()
         html += u"</div>"+lb # /#outer
-        html += u"<div id=\"lmsubmit\"></div><script type=\"text/javascript\" language=\"javascript\">doStart();</script>"+lb
         if style.hasValidConfig:
             html += style.get_extra_body() 
         html += u'</body>'

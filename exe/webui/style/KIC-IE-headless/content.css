@@ -194,10 +194,20 @@ overflow:auto;
 padding-left:4px;
 padding-right:4px;
 }
-/* Inserted ktlm */
-#siteFooter
-{
+
+#siteFooter {
 	margin-top:-10px;
 	margin-left:-222px;
 }
-/* Inserted ktlm END */
+
+#skipNav {
+  display:none
+}
+
+.js-hidden {
+  display:none
+}
+
+#bottomPagination {
+	height:40px;
+}
