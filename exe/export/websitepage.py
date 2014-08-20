@@ -151,7 +151,7 @@ class WebsitePage(Page):
 
                 html += u"\""
             html += u">"
-            html += escape(self.node.package.title)
+            #html += escape(self.node.package.title)
             html += u"</"+headerTag+">"+lb
         else:
             html += "<"+sectionTag+" id=\"emptyHeader\"></"+sectionTag+">"+lb
