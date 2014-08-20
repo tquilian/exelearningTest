@@ -1413,6 +1413,8 @@ class ClozeElement(ElementWithResources):
                 aceptedWords=[]
                 aceptedWords=missingWord.split('|')
                 lenWord=max(len(wrd) for wrd in aceptedWords)
+                # special KIT
+                lenWord=round(lenWord*0.7)
                 words += "'" + missingWord + "',"
                 # The edit box for the user to type into
                 #'  autocomplete="off"',
