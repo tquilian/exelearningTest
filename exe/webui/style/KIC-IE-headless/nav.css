@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Ubuntu+Condensed);
+
+
+#main {
+	padding-left:230px;
+}
+
+#siteNav {
+	width: 200px;
+	float: left;
+	font-size:1.15em;
+	margin-top:10px;
+}
+
+#siteNav ul,#siteNav li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#siteNav a {
+	display: block;
+	padding:4px 0px 4px 10px;
+	text-decoration: none;
+}
+
+#siteNav a:hover {
+	color: #009fe1;
+	background:#eee;
+	color:#009fe1;
+}
+
+#siteNav .active {
+	color: #009fe1;
+	border-bottom: 1px dotted #CCC;
+}
+
+#siteNav .main-node, #siteNav .no-ch{
+	border-bottom:none;
+}
+#siteNav li .current-page-parent {
+	border-bottom: 1px dotted #CCC;
+}
+
+
+#siteNav ul ul{
+	border-bottom:1px dotted #ccc;
+	font-size:0.8em;
+}
+
+#siteNav ul ul a{
+	width: 185px;
+	padding-left:15px;
+	border-bottom:none;
+}
+
+#siteNav ul ul ul a{
+	width: 180px;
+	padding-left:20px;
+	border-bottom:none;
+}
+
+#siteNav .other-section{
+	display:none; /* Remove if you want all levels to be displayed */
+}
+
+* html #siteNav a,* html #siteNav ul ul a{ /* IE6 */
+	width:169px;
+}
+
+* html #siteNav { /* IE6 */
+	margin-right: 10px;
+}
+
+#topPagination {
+	display:none;/*to avoid failures with export*/
+}
+
+* html #content {
+height:1%;
+overflow:visible;
+}
+
+* html #header,* html #emptyHeader {
+}
+
+* html #siteNav a {
+display:inline-block;
+width:100%;
+}
+
+html[xmlns] #content {
+display:block;
+}
+
+
+.block #content {
+width:693px;
+border:1px;
+border-style:dashed;
+border-color:#aaa;
+padding:10px;
+font-size:1.1em;
+}
+
+
+#header {
+display:none;
+}
+
+/* Inserted ktlm */
+#siteNav ul span{margin:4px 0px 0px 0px;font-size:.95em}
+#siteNav ul ul span{margin:4px 0px 0px 16px;font-size:.95em}
+/*#siteNav ul ul a{margin:4px 0px 0px 16px;font-size:.95em}*/
+#siteNav ul ul ul span{margin:4px 0px 0px 41px;font-size:.95em}
+#siteNav ul ul ul a{margin:4px 0px 0px 25px;font-size:.95em}
+/* Inserted ktlm END*/
+

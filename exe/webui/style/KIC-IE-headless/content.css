@@ -1,0 +1,203 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Ubuntu+Condensed);
+
+
+body {
+background:#fff;
+color:#333;
+font:100%/1.5 'Ubuntu Condensed',Arial,Verdana,Helvetica,sans-serif;
+font-weight:200;
+margin:0;
+padding:0;
+/*text-align:center;*/
+}
+
+#content {
+background-image:url(footer.png); background-repeat:repeat-x;
+background-position:left bottom;
+background-color:#fff;
+border-color:#ccc;
+border-style:solid;
+border-top:0;
+border-width:1px;
+font-size:.85em;
+margin:0 auto 10px;
+position:relative;
+width:985px;
+/*add*/
+display:inline-block;
+text-align:left;
+}
+
+#content:after {
+clear:both;
+content:".";
+display:block;
+height:0;
+line-height:120%;
+visibility:hidden;
+}
+
+#main {
+padding-bottom:60px;
+}
+
+#main h2 {
+font-size:1.4em;
+}
+
+#main h2.iDeviceTitle {
+display:inline;
+font-size:1.2em;
+}
+
+#main h3 {
+font-size:1.3em;
+}
+
+#main h4 {
+font-size:1.2em;
+}
+
+#main h5 {
+font-size:1.1em;
+}
+
+#main ul li {
+list-style-image:url(my_list.gif);
+margin-bottom:.2em;
+width:auto;
+}
+
+#nodeTitle {
+color:#009fe1;
+font-size:2.1em;
+font-weight:200;
+margin:0;
+padding-top:10px;
+text-align:left;
+width:600px;
+}
+
+
+#main #nodeDecoration {
+}
+
+#topPagination {
+position:absolute;
+right:20px;
+top:0;
+}
+
+#topPagination .pagination {
+border:none;
+}
+
+.iDevice {
+margin:10px 0 20px;
+}
+
+.iDeviceTitle {
+color:#009fe1;
+font-size:1.5em;
+font-weight:200;
+vertical-align:top;
+}
+
+.iDevice_icon {
+height:auto;
+margin-right:5px;
+width:30px;
+}
+
+.iDevice_inner {
+background-color:#f0ffff; 
+border-color:#ccc;
+border-style:dotted;
+border-width:1px 0;
+color:#4d4d4d;
+padding:10px 20px 20px;
+font-weight:200;
+}
+
+.noprt {
+color:#009fe1;
+
+}
+
+.noprt a {
+font-weight:200;
+font-size:1.4em;
+color:#009fe1;
+}
+
+.noprt a:hover {
+background-color:#fff;
+}
+
+.pagination a,.noprt a {
+padding:3px;
+}
+
+.pagination a:hover,.noprt a:hover {
+text-decoration:none;
+}
+
+.pagination,.noprt {
+border-style:dotted;
+border-width:0px 0 0;
+padding-top:10px;
+text-align:right;
+}
+
+.pre-code {
+background:#112C4A;
+border-radius:9px;
+color:#E7ECF1;
+font-family:'Ubuntu Mono',Monaco,Courier,monospace;
+font-size:1.1em;
+margin:2em 1em;
+overflow:auto;
+padding:20px;
+}
+
+a {
+color:#263264;
+text-decoration:none;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+input.feedbackbutton {
+background-color:rgb(215,233,207);/*#DBE992;*/
+}
+
+.feedback {
+  padding:10px;
+  margin:10px;
+  background-color:rgb(215,233,207);
+}
+
+iframe {
+border-color:#ccc;
+border-style:dotted;
+border-width:1px 0;
+}
+.iDevice_inner table {
+overflow:auto;
+max-width:100%;
+border-width:0;
+}
+.iDevice_inner table td{
+overflow:auto;
+padding-left:4px;
+padding-right:4px;
+}
+/* Inserted ktlm */
+#siteFooter
+{
+	margin-top:-10px;
+	margin-left:-222px;
+}
+/* Inserted ktlm END */
